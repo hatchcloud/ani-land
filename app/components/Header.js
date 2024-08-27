@@ -19,14 +19,14 @@ function Header() {
                 height={36} 
             />
         </div>
-        <nav className="gap-5 text-base hidden lg:flex text-gray-700 hover:text-gray-900">
+        <nav className="gap-5 text-base hidden lg:flex text-gray-50 hover:text-gray-200">
           <a href="#" >What we do?</a>
           <a href="#" >Case Studies</a>
           <a href="#" >Contact Us</a>
           <a href="#" >Blog</a>
         </nav>  
         <div className="w-[150px] flex  justify-end">
-            <div className="border text-md border-gray-400 rounded-full px-4 py-1 text-gray-700 hover:text-gray-900 hover:border-gray-900">
+            <div className="border text-md border-gray-600 rounded-full px-4 py-1 text-gray-50 hover:text-gray-200 hover:border-gray-200">
             EN
             </div>
         </div>    
@@ -35,7 +35,7 @@ function Header() {
         initial={{ scaleX: 0.002 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
-        className=" absolute bg-black/20 h-[1.5px] w-full  bottom-0"
+        className=" absolute bg-white/20 h-[1.5px] w-full  bottom-0"
       />
     </div>
   )

@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
       <body className={plusJakartaSans.className}>
       <Providers 
             defaultTheme="system"
-            enableSystem
             disableTransitionOnChange>
         {children}
       </Providers>

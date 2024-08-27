@@ -20,13 +20,13 @@ export default function Home() {
     requestAnimationFrame(raf)
   }, [])
   return (
-    <main className="bg-cream-200 min-h-screen flex flex-col items-center">
+    <main className=" bg-black min-h-screen flex flex-col items-center text-white">
       <Header />
       <Hero />
       <HeroCarrusel />
       <AboutUs />
       <Cases />
-      <section className=" bg-cream-50  w-full h-svh z-10"></section>
+      <section className="  bg-black w-full h-svh z-10"></section>
     </main>
   );
 }

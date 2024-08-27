@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 export default function AboutUs() {
   return (
-    <section className="w-full   max-w-[2000px] px-5  md:px-10 bg-cream-200  flex justify-around items-end sticky top-0">
+    <section className="w-full   max-w-[2000px] px-5  md:px-10 bg-black  flex justify-around items-end sticky top-0">
       <motion.div
         initial={{ scaleY: 0.002 }}
         animate={{ scaleY: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
-        className=" absolute bg-black/20 w-[1.5px] h-full origin-bottom  bottom-0 right-5 md:right-10"
+        className=" absolute bg-white/20 w-[1.5px] h-full origin-bottom  bottom-0 right-5 md:right-10"
       />
       <motion.div
         initial={{ opacity: 0 }}
@@ -29,7 +29,7 @@ export default function AboutUs() {
         initial={{ scaleY: 0.002 }}
         animate={{ scaleY: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
-        className=" absolute bg-black/20 w-[1.5px] h-full origin-bottom  bottom-0 left-5 md:left-10"
+        className=" absolute bg-white/20 w-[1.5px] h-full origin-bottom  bottom-0 left-5 md:left-10"
       />
     </section>
   );
