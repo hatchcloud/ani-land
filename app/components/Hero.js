@@ -17,7 +17,7 @@ function Hero() {
             transition={{ duration: 1 , ease: "easeInOut" }}
             className='pl-2 md:pl-0 text-left md:text-center text-gray-50'
             >
-            <p className=' heading-sub uppercase leading-tight tracking-[3.6px]'>Totem Software</p>    
+            <p className=' heading-sub uppercase leading-tight tracking-[3.6px] pb-2'>Totem Software</p>    
             <h1 className= 'heading-hero max-w-[1300px] leading-[90%] font-extrabold uppercase tracking-[-1.35px]'>
                 From ideas to{" "}
                 <motion.span
