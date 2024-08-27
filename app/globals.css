@@ -11,5 +11,5 @@
 
 
 .heading-hero{
-  font-size: clamp(4.5rem, 10vw, 8rem);
+  font-size: clamp(4.5rem, 10vw, 10rem);
 }

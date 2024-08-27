@@ -11,7 +11,7 @@ function Header() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
         className="px-5 md:px-10 w-full flex justify-between items-center max-w-[2000px]">
-        <div className="text-2xl font-semibold">
+        <div className="text-2xl font-semibold ">
             <Image 
                 src="/logo.svg" 
                 alt="Totem Logo"
@@ -19,7 +19,7 @@ function Header() {
                 height={36} 
             />
         </div>
-        <nav className="gap-5 text-base hidden md:flex text-gray-700 hover:text-gray-900">
+        <nav className="gap-5 text-base hidden lg:flex text-gray-700 hover:text-gray-900">
           <a href="#" >What we do?</a>
           <a href="#" >Case Studies</a>
           <a href="#" >Contact Us</a>
@@ -34,7 +34,7 @@ function Header() {
       <motion.div
         initial={{ scaleX: 0.002 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
         className=" absolute bg-black/10 h-[1.5px] w-full  bottom-0"
       />
     </div>

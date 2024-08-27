@@ -9,7 +9,7 @@ function HeroCarrusel() {
         initial={{ opacity: 0  }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.7, ease: "easeInOut", delay: 1 }}
-        className="max-w-[2000px] w-full relative min-h-[1000px] aspect-[1/0.8]">
+        className="max-w-[2000px] w-full relative min-h-[500px] lg:aspect-[1/0.8]">
         <Image 
             src={heroImage}
             alt="Hero"
