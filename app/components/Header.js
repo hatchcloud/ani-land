@@ -35,7 +35,7 @@ function Header() {
         initial={{ scaleX: 0.002 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
-        className=" absolute bg-black/10 h-[1.5px] w-full  bottom-0"
+        className=" absolute bg-black/20 h-[1.5px] w-full  bottom-0"
       />
     </div>
   )
