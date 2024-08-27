@@ -17,7 +17,7 @@ function HeroCarrusel() {
             objectFit="cover"
             priority={true}
             placeholder="blur"
-            className=" px-10"
+            className=" px-5  md:px-10"
         />
 
 

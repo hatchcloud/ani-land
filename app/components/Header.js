@@ -10,7 +10,7 @@ function Header() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="px-10 w-full flex justify-between items-center max-w-[2000px]">
+        className="px-5 md:px-10 w-full flex justify-between items-center max-w-[2000px]">
         <div className="text-2xl font-semibold">
             <Image 
                 src="/logo.svg" 
@@ -19,7 +19,7 @@ function Header() {
                 height={36} 
             />
         </div>
-        <nav className="flex gap-5 text-base hidden md:visible text-gray-700 hover:text-gray-900">
+        <nav className="gap-5 text-base hidden md:flex text-gray-700 hover:text-gray-900">
           <a href="#" >What we do?</a>
           <a href="#" >Case Studies</a>
           <a href="#" >Contact Us</a>
