@@ -19,7 +19,7 @@ function Header() {
                 height={36} 
             />
         </div>
-        <nav className="flex gap-5 text-base text-gray-700 hover:text-gray-900">
+        <nav className="flex gap-5 text-base hidden md:visible text-gray-700 hover:text-gray-900">
           <a href="#" >What we do?</a>
           <a href="#" >Case Studies</a>
           <a href="#" >Contact Us</a>

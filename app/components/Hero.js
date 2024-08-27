@@ -14,14 +14,14 @@ function Hero() {
         <motion.div
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: -40 }}
-            transition={{ duration: 0.8 , ease: "easeInOut" }}
+            transition={{ duration: 1 , ease: "easeInOut" }}
             >
-            <h1 className='text-center text-6xl max-w-[1070px] leading-[90%] font-extrabold uppercase tracking-[-1.35px]'>
+            <h1 className='text-center text-[90px] lg:text-[108px] xl:text-6xl  max-w-[1070px] leading-[90%] font-extrabold uppercase tracking-[-1.35px]'>
                 From ideas to{" "}
                 <motion.span
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: 1, y: -40 }}
-                transition={{ duration: 0.5, ease: "easeInOut", delay: 1 }}
+                transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
                 className='tracking-[-2.3px]'
                 >
                 digital impact
