@@ -17,8 +17,8 @@ export default function AboutUs() {
         className=" w-full min-h-[365px] px-5 lg:px-10 h-full flex justify-center items-start lg:items-center gap-[60px] lg:gap-[200px]  flex-col md:flex-row  py-16 lg:py-24 "
       >
         <div>
-            <p className=' uppercase '>About Us</p>
-        <h2 className='text-2xl leading-[90%] font-bold max-w-[330px]' >Continuous Development</h2>
+            <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2'>About Us</p>
+        <h2 className='text-2xl leading-[90%] font-extrabold max-w-[330px]' >Continuous Development</h2>
         </div>
         <div>
             <p className='text-md leading-[150%] max-w-[430px]  text-pretty'>In Totem, we are a software company 
