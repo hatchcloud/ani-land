@@ -1,14 +1,14 @@
 'use client'
 import { motion } from 'framer-motion';
 import Image from "next/image"
-import heroImage from '../../public/hero.png';
+import heroImage from '../../public/mock_up.png';
 
 function HeroCarrusel() {
   return (
     <motion.div 
         initial={{ opacity: 0  }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
+        transition={{ duration: 1.5, ease: "easeInOut", delay: 1 }}
         className="max-w-[2000px] w-full relative h-[1000px]">
         <Image 
             src={heroImage}
@@ -20,7 +20,7 @@ function HeroCarrusel() {
             className=" px-10"
         />
 
-        
+
     </motion.div>
   )
 }

@@ -10,7 +10,7 @@ function Header() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="px-10 w-full flex justify-between items-center">
+        className="px-10 w-full flex justify-between items-center max-w-[2000px]">
         <div className="text-2xl font-semibold">
             <Image 
                 src="/logo.svg" 
@@ -34,7 +34,7 @@ function Header() {
       <motion.div
         initial={{ scaleX: 0.002 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
         className=" absolute bg-black/10 h-[1.5px] w-full  bottom-0"
       />
     </div>
