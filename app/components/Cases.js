@@ -1,13 +1,16 @@
 import CaseProject from "./CaseProject"
-import heroImage from '../../public/placeholder.png';
+import projectA from '../../public/project01.png';
+import projectB from '../../public/project02.png';
+import projectC from '../../public/project03.png';
+
 export default function Cases() {
   return (
     <section className="bg-gray-900  w-full min-h-48 z-10" >
         <div className=" bg-black/5 h-full w-full flex items-center justify-center py-28">
         <div className="max-w-[2000px] w-full px-5 md:px-10 gap-[40px] lg:gap-[60px] flex flex-col lg:flex-row ">
-            <CaseProject src={heroImage} />
-            <CaseProject src={heroImage}  />
-            <CaseProject src={heroImage} />
+            <CaseProject src={projectA} />
+            <CaseProject src={projectB} />
+            <CaseProject src={projectC} />
         </div>
         </div>
     </section>

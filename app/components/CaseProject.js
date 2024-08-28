@@ -16,7 +16,7 @@ export default function CaseProject({ src }) {
         viewport={{ once: true}}
         className="w-full h-full bg-gray-900 z-20 absolute hidden lg:flex"
       />
-      
+      {/* Left-to-right animation for smaller screens */}
       <motion.div
         initial={{ scaleX: 1 }} 
         whileInView={{ scaleX: 0 }} 
@@ -25,13 +25,19 @@ export default function CaseProject({ src }) {
         viewport={{ once: true}}
         className="w-full h-full bg-gray-900 z-20 absolute flex lg:hidden"
       />
+      <div className="w-full h-full min-h-[400px] relative pr-[1.5px]  ">
+
       <Image 
       src={src}
       alt="Hero"
       layout="fill"
+      quality={100}
+      sizes="(max-width: 600px) 100vw"
       objectFit="cover"
+      placeholder="blur"
       className=""
       />
+      </div>
       </div>
       <div className="flex flex-col w-full pt-4">
         <h3 className="text-md uppercase">
