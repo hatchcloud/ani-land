@@ -6,14 +6,24 @@ import Image from "next/image"
 export default function CaseProject({ src }) {
   return (
     <div className="flex-col min-h-[400px] lg:min-h-[760px] w-full flex justify-center items-center">
-      <div className="w-full h-full relative">
+      <div className="w-full h-full min-h-[400px] relative">
 
       <motion.div
-        initial={{ scaleY: 1 }} // Initial state
-        whileInView={{ scaleY: 0 }} // Animate when in view
-        transition={{ duration: 1.4, ease: "easeInOut" }} // Customize the transition
-        style={{ transformOrigin: "top" }} // Scale from bottom to top
-        className="w-full h-full bg-gray-900 origin-bottom z-20 absolute"
+        initial={{ scaleY: 1 }} 
+        whileInView={{ scaleY: 0 }} 
+        transition={{ duration: 1.4, ease: "easeInOut" }} 
+        style={{ transformOrigin: "top" }} 
+        viewport={{ once: true}}
+        className="w-full h-full bg-gray-900 z-20 absolute hidden lg:flex"
+      />
+      
+      <motion.div
+        initial={{ scaleX: 1 }} 
+        whileInView={{ scaleX: 0 }} 
+        transition={{ duration: 0.8, ease: "easeInOut" }} 
+        style={{ transformOrigin: "left" }} 
+        viewport={{ once: true}}
+        className="w-full h-full bg-gray-900 z-20 absolute flex lg:hidden"
       />
       <Image 
       src={src}
