@@ -49,7 +49,7 @@ export default function Services() {
       >
         <div className=' w-full lg:w-auto flex items-start flex-col lg:sticky top-20 bottom-40'>
             <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2'>Services</p>
-        <h2 className='text-2xl leading-[90%] font-extrabold max-w-[400px] min-w-[400px]' >Many ways to <span className='text-[#AFF3DC] '>support
+        <h2 className='text-2xl leading-[90%] font-extrabold lg:max-w-[400px] lg:min-w-[400px]' >Many ways to <span className='text-[#AFF3DC] '>support
         your ideas</span></h2>
         </div>
         <div className='w-full lg:w-3/4 flex flex-col '>

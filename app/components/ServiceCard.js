@@ -5,7 +5,7 @@ export default function ServiceCard({ title, description, badges, time }) {
   return (
     <div className="pb-5 lg:pb-10 text-white relative mb-8">
       <div className="flex items-center space-x-4 mb-4 justify-between">
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
 
         {badges.map((badge, index) => (
           <span key={index} className="bg-white/10 text-white/70 text-sm font-light px-3 py-1 rounded-full">
