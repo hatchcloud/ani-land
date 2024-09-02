@@ -1,9 +1,11 @@
-
 'use client'
 import { motion } from "framer-motion";
 import Image from "next/image"
 
-export default function CaseProject({ src }) {
+export default function CaseProject({ src, velocity = 1 }) {
+  const durationY = 1.4 / velocity;
+  const durationX = 0.8 / velocity;
+
   return (
     <div className="flex-col min-h-[400px] lg:min-h-[760px] w-full flex justify-center items-center">
       <div className="w-full h-full min-h-[400px] relative">
@@ -11,18 +13,18 @@ export default function CaseProject({ src }) {
       <motion.div
         initial={{ scaleY: 1 }} 
         whileInView={{ scaleY: 0 }} 
-        transition={{ duration: 1.4, ease: "easeInOut" }} 
+        transition={{ duration: durationY, ease: "easeInOut" }} 
         style={{ transformOrigin: "top" }} 
-        viewport={{ once: true}}
+        viewport={{ once: true, amount: 0.5}}
         className="w-full h-full bg-gray-900 z-20 absolute hidden lg:flex"
       />
       {/* Left-to-right animation for smaller screens */}
       <motion.div
         initial={{ scaleX: 1 }} 
         whileInView={{ scaleX: 0 }} 
-        transition={{ duration: 0.8, ease: "easeInOut" }} 
+        transition={{ duration: durationX, ease: "easeInOut" }} 
         style={{ transformOrigin: "left" }} 
-        viewport={{ once: true}}
+        viewport={{ once: true, amount: 0.5}}
         className="w-full h-full bg-gray-900 z-20 absolute flex lg:hidden"
       />
       <div className="w-full h-full min-h-[400px] relative pr-[1.5px]  ">
@@ -41,7 +43,7 @@ export default function CaseProject({ src }) {
       </div>
       <div className="flex flex-col w-full pt-4">
         <h3 className="text-md uppercase">
-          Proyecto
+          Project Name
         </h3>
         <h3 className="text-base text-white/50 ">
           Details

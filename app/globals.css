@@ -21,3 +21,8 @@
   font-size: clamp(14px, 2vw, 20px);
 }
 
+.h-team {
+  font-size: clamp(14px, 2vw, 28px);
+}
+
+

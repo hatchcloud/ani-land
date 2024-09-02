@@ -3,10 +3,12 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AboutUs from './components/AboutUs'
+import Services from './components/Services'
 import HeroCarrusel from "./components/HeroCarrusel";
 import Cases from "./components/Cases";
 import { useEffect, useRef } from "react";
 import Lenis from 'lenis'
+import TeamPhoto from "./components/Team";
 
 export default function Home() {
   useEffect( () => {
@@ -26,6 +28,8 @@ export default function Home() {
       <HeroCarrusel />
       <AboutUs />
       <Cases />
+      <Services />
+      <TeamPhoto />
       <section className="  bg-black w-full h-svh z-10"></section>
     </main>
   );
