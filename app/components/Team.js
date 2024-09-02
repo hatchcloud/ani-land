@@ -25,7 +25,6 @@ function TeamPhoto() {
             alt="Hero"
             layout="fill"
             objectFit="cover"
-            priority={true}
             placeholder="blur"
             className=" px-5  md:px-10 -z-20"
         />
