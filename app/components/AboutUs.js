@@ -4,16 +4,14 @@ import { motion } from 'framer-motion';
 export default function AboutUs() {
   return (
     <section className="w-full   max-w-[2000px] px-5  md:px-10 bg-black  flex justify-around items-end sticky top-0">
-      <motion.div
-        initial={{ scaleY: 0.002 }}
-        animate={{ scaleY: 1 }}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
+      <div
         className=" absolute bg-white/20 w-[1.5px] h-full origin-bottom  bottom-0 right-5 md:right-10"
       />
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        initial={{ opacity: 0 }} 
+        whileInView={{ opacity: 1 }} 
+        transition={{ duration: 0.8, ease: "easeIn" }} 
+        viewport={{ once: true, amount: .5 }}
         className=" w-full min-h-[365px] px-5 lg:px-10 h-full flex justify-center items-start lg:items-center gap-[60px] lg:gap-[200px]  flex-col md:flex-row  py-16 lg:py-24 "
       >
         <div>
@@ -25,10 +23,7 @@ export default function AboutUs() {
             that collaborates closely with startups and industry leaders. Together, we develop cutting-edge solutions that fuel growth and success.</p>
         </div>
       </motion.div>
-      <motion.div
-        initial={{ scaleY: 0.002 }}
-        animate={{ scaleY: 1 }}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
+      <div
         className=" absolute bg-white/20 w-[1.5px] h-full origin-bottom  bottom-0 left-5 md:left-10"
       />
     </section>

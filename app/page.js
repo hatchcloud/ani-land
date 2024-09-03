@@ -31,6 +31,7 @@ export default function Home() {
       <Services />
       <TeamPhoto />
       <section className="  bg-black w-full h-svh z-10"></section>
+      <section className="  bg-black w-full h-svh z-10"></section>
     </main>
   );
 }

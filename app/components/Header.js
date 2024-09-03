@@ -22,8 +22,8 @@ function Header() {
         <nav className="gap-5 text-base hidden lg:flex text-gray-50 hover:text-gray-200">
           <a href="#" >What we do?</a>
           <a href="#" >Case Studies</a>
-          <a href="#" >Contact Us</a>
           <a href="#" >Blog</a>
+          <a href="#" >Contact Us</a>
         </nav>  
         <div className="w-[150px] flex  justify-end">
             <div className="border text-md border-gray-600 rounded-full px-4 py-1 text-gray-50 hover:text-gray-200 hover:border-gray-200">

@@ -16,7 +16,7 @@ export default function CaseProject({ src, velocity = 1 }) {
         transition={{ duration: durationY, ease: "easeInOut" }} 
         style={{ transformOrigin: "top" }} 
         viewport={{ once: true, amount: 0.5}}
-        className="w-full h-full bg-gray-900 z-20 absolute hidden lg:flex"
+        className="w-full h-full bg-neutral-900 z-20 absolute hidden lg:flex"
       />
       {/* Left-to-right animation for smaller screens */}
       <motion.div
@@ -25,7 +25,7 @@ export default function CaseProject({ src, velocity = 1 }) {
         transition={{ duration: durationX, ease: "easeInOut" }} 
         style={{ transformOrigin: "left" }} 
         viewport={{ once: true, amount: 0.5}}
-        className="w-full h-full bg-gray-900 z-20 absolute flex lg:hidden"
+        className="w-full h-full bg-neutral-900 z-20 absolute flex lg:hidden"
       />
       <div className="w-full h-full min-h-[400px] relative pr-[1.5px]  ">
 
@@ -42,7 +42,7 @@ export default function CaseProject({ src, velocity = 1 }) {
       </div>
       </div>
       <div className="flex flex-col w-full pt-4">
-        <h3 className="text-md uppercase">
+        <h3 className="text-md font-medium">
           Project Name
         </h3>
         <h3 className="text-base text-white/50 ">
