@@ -24,7 +24,7 @@ function Hero() {
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: 1, y: -40 }}
                 transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
-                className='tracking-[-2.3px] transition-colors duration-200 ease-in text-[#C8ADEF]'
+                className='tracking-[-2.3px] transition-colors duration-200 ease-in text-[#A97FE6]'
                 >
                 digital impact
                 </motion.span>

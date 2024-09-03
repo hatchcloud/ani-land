@@ -46,9 +46,9 @@ export default function Services() {
         viewport={{ once: true, amount: 0.3 }}
         className=" w-full px-5 lg:px-10 h-full flex justify-between items-start relative gap-[40px] lg:gap-[80px]  flex-col lg:flex-row  py-16 lg:py-24 "
       >
-        <div className=' w-full lg:w-auto flex items-start flex-col lg:sticky top-20 lg:pb-40'>
+        <div className=' w-full lg:w-auto flex items-start flex-col lg:sticky top-20 bottom-40'>
             <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2'>Services</p>
-        <h2 className='text-2xl leading-[90%] font-extrabold lg:max-w-[400px] lg:min-w-[400px]' >Many ways to <span className='text-[#EFFF41] '>support
+        <h2 className='text-2xl leading-[90%] font-extrabold lg:max-w-[400px] lg:min-w-[400px]' >Many ways to <span className='text-[#AFF3DC] '>support
         your ideas</span></h2>
         </div>
         <div className='w-full lg:w-3/4 flex flex-col '>

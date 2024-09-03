@@ -18,7 +18,7 @@ export default function CaseProject({ src, velocity = 1 }) {
         viewport={{ once: true, amount: 0.5}}
         className="w-full h-full bg-neutral-900 z-20 absolute hidden lg:flex"
       />
-      {/* Left-to-right animation for smaller screens */}
+      {/* Left-to-right mobile */}
       <motion.div
         initial={{ scaleX: 1 }} 
         whileInView={{ scaleX: 0 }} 
@@ -27,7 +27,7 @@ export default function CaseProject({ src, velocity = 1 }) {
         viewport={{ once: true, amount: 0.5}}
         className="w-full h-full bg-neutral-900 z-20 absolute flex lg:hidden"
       />
-      <div className="w-full h-full min-h-[400px] relative pr-[1.5px]  ">
+      <div className="w-full h-full min-h-[400px] relative pr-[1.5px] overflow-hidden ">
 
       <Image 
       src={src}
@@ -37,7 +37,7 @@ export default function CaseProject({ src, velocity = 1 }) {
       sizes="(max-width: 600px) 100vw"
       objectFit="cover"
       placeholder="blur"
-      className=""
+      className=" transition-transform ease-linear duration-300 hover:scale-110"
       />
       </div>
       </div>

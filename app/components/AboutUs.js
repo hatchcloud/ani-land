@@ -16,7 +16,7 @@ export default function AboutUs() {
       >
         <div>
             <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2'>About Us</p>
-        <h2 className='text-2xl leading-[90%] font-extrabold max-w-[330px]' >Continuous <span className='text-[#AFF3DC] '>Development</span></h2>
+        <h2 className='text-2xl leading-[90%] font-extrabold max-w-[330px]' >Continuous <span className='text-[#2cee91] '>Development</span></h2>
         </div>
         <div>
             <p className='text-md leading-[150%] max-w-[430px]  text-pretty'>In Totem, we are a software company 
