@@ -1,9 +1,9 @@
 'use client'
 import { motion } from "framer-motion";
 
-export default function ServiceCard({ title, description, badges, time }) {
+export default function ServiceCard({ title, description, badges, time, setCursor }) {
   return (
-    <div className="pb-5 lg:pb-10 text-white relative mb-8">
+    <div className="pb-5 lg:pb-10 text-white relative mb-8 cursor-none" onMouseEnter={() => {setCursor({active: true})}} onMouseLeave={() => {setCursor({active: false})}} >
       <div className="flex items-center space-x-4 mb-4 justify-between">
         <div className="flex flex-col lg:flex-row gap-4">
 

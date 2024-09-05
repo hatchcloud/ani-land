@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import ServiceCard from "./ServiceCard"
 
 
-export default function Services() {
+export default function Services({setCursor}) {
     const services = [
         {
           title: 'Bring your idea to life',
@@ -59,6 +59,7 @@ export default function Services() {
           description={service.description}
           badges={service.badges}
           time={service.time}
+          setCursor={setCursor}
         />
       ))}
 

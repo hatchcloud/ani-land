@@ -9,8 +9,13 @@ import Cases from "./components/Cases";
 import { useEffect, useRef } from "react";
 import Lenis from 'lenis'
 import TeamPhoto from "./components/Team";
+import Cursor from "./components/Cursor";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [cursor, setCursor] = useState({active: false, part: 'default' })
+
   useEffect( () => {
     const lenis = new Lenis()
     window.scrollTo(0, 0);
@@ -23,12 +28,13 @@ export default function Home() {
   }, [])
   return (
     <main className=" bg-black min-h-screen flex flex-col items-center text-white">
+      <Cursor cursor={cursor} />
       <Header />
       <Hero />
       <HeroCarrusel />
       <AboutUs />
       <Cases />
-      <Services />
+      <Services setCursor={setCursor} />
       <TeamPhoto />
       <section className="  bg-black w-full h-svh z-10"></section>
       <section className="  bg-black w-full h-svh z-10"></section>
