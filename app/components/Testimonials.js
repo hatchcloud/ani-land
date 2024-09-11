@@ -62,11 +62,7 @@ const Testimonials = () => {
   return (
     <div className='w-full bg-[#1A1C1F] relative flex flex-col items-center justify-center'>
 
-<motion.div
-        initial={{ opacity: 0 }} 
-        whileInView={{ opacity: 1 }} 
-        transition={{ duration: 0.8, ease: "easeIn" }} 
-        viewport={{ once: true, amount: 0.3 }}
+<div
         className=" w-2/5 absolute px-5 lg:px-10 h-full flex max-w-[2000px] justify-between items-start top-0 left-0 z-20 gap-[40px] lg:gap-[80px] gradient  flex-col lg:flex-row  pt-16 lg:pt-24 "
       >
         <div className=' w-full lg:w-auto flex items-start flex-col lg:sticky top-20 pb-4'>
@@ -77,7 +73,7 @@ const Testimonials = () => {
         <div className='w-full lg:w-3/4 flex flex-col '>
       
         </div>
-      </motion.div>
+      </div>
 
     <motion.section className='w-full left-0  py-20 z-10 flex gap-3' ref={ref}  style={{ x: xTranslation}} >
       
