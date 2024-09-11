@@ -6,7 +6,7 @@ const TestimonialsCard = ({card}) => {
   return (
     <motion.div
             key={card.id}
-            className="min-w-[400px] bg-[#33373d] text-white rounded-lg p-6 text-md  w-full"
+            className="min-w-[400px] bg-[#33373d] text-white rounded-lg p-6   w-full"
           >
             <p className="mb-4">{card.description}</p>
             <div className="flex items-center">
