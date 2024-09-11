@@ -11,6 +11,7 @@ import Lenis from 'lenis'
 import TeamPhoto from "./components/Team";
 import Cursor from "./components/Cursor";
 import { useState } from "react";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
 
@@ -36,6 +37,7 @@ export default function Home() {
       <Cases />
       <Services setCursor={setCursor} />
       <TeamPhoto />
+      <Testimonials />
       <section className="  bg-black w-full h-svh z-10"></section>
       <section className="  bg-black w-full h-svh z-10"></section>
     </main>

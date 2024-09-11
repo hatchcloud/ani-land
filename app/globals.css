@@ -25,4 +25,7 @@
   font-size: clamp(14px, 2vw, 28px);
 }
 
+.gradient {
+  background: linear-gradient(90deg, #1A1C1F 0%, rgba(26, 28, 31, 0.94) 70%, rgba(26, 28, 31, 0.00) 100%);
+}
 
