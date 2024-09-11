@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 import ServiceCard from "./ServiceCard"
 
 
+
 export default function Services({setCursor}) {
+
+
     const services = [
         {
           title: 'Bring your idea to life',
@@ -36,7 +39,6 @@ export default function Services({setCursor}) {
   return (
     <section className="w-full  relative  max-w-[2000px] px-5  md:px-10 bg-black  flex justify-between items-start z-10">
       <div
-        
         className=" absolute bg-white/20 w-[1.5px] h-full origin-bottom  bottom-0 right-5 md:right-10"
       />
       <motion.div

@@ -22,6 +22,9 @@ export default function AboutUs() {
             <p className='text-md leading-[150%] max-w-[430px]  text-pretty'>In Totem, we are a software company 
             that collaborates closely with startups and industry leaders. Together, we develop cutting-edge solutions that fuel growth and success.</p>
         </div>
+
+
+        
       </motion.div>
       <div
         className=" absolute bg-white/20 w-[1.5px] h-full origin-bottom  bottom-0 left-5 md:left-10"
