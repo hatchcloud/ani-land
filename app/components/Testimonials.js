@@ -60,13 +60,13 @@ const Testimonials = () => {
 
 
   return (
-    <div className="w-full bg-[#1A1C1F] overflow-hidden relative flex flex-col items-center justify-center">
-      <div className=" w-full absolute h-full flex  justify-between items-start inset-auto z-20 flex-col lg:flex-row">
+    <div className="w-full bg-[#1A1C1F] overflow-hidden relative flex flex-col items-center justify-center  min-h-[50%] ">
+      <div className=" w-full relative  lg:absolute h-full flex  justify-between items-start inset-auto z-20 flex-col lg:flex-row">
         
         <div className=' bg-[#1A1C1F] h-full w-7 2xl:w-[60%] '></div>
-        <div className='w-full max-w-[2000px] min-w-[80vw] h-full'>
+        <div className='w-full lg:max-w-[2000px] min-w-[80vw] h-full '>
 
-        <div className=" relative gradient h-full w-2/3 lg:w-auto flex items-start flex-col pb-4 px-10 lg:px-20 pt-16 lg:pt-24">
+        <div className=" relative gradient h-full w-full lg:w-2/3 max-w-[2000px] flex items-start flex-col pb-4 px-10 lg:px-20 pt-16 lg:pt-24">
           <p className="h-sub uppercase leading-tight tracking-[3.6px] pb-2">
             Testimonials
           </p>
@@ -81,11 +81,11 @@ const Testimonials = () => {
       </div>
 
       <motion.section
-        className="w-full left-0  py-20 z-10 flex gap-3"
+        className="w-full left-0  py-10 lg:py-20 z-10 flex gap-3"
         ref={ref}
         style={{ x: xTranslation }}
       >
-        {[...carouselData, ...carouselData, ...carouselData].map((card) => (
+        {[...carouselData, ...carouselData].map((card) => (
           <TestimonialsCard key={card.id} card={card} />
         ))}
       </motion.section>
