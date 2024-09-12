@@ -60,29 +60,37 @@ const Testimonials = () => {
 
 
   return (
-    <div className='w-full bg-[#1A1C1F] relative flex flex-col items-center justify-center'>
+    <div className="w-full bg-[#1A1C1F] overflow-hidden relative flex flex-col items-center justify-center">
+      <div className=" w-full absolute h-full flex  justify-between items-start inset-auto z-20 flex-col lg:flex-row">
+        
+        <div className=' bg-[#1A1C1F] h-full w-7 2xl:w-[60%] '></div>
+        <div className='w-full max-w-[2000px] min-w-[80vw] h-full'>
 
-<div
-        className=" w-2/5 absolute px-5 lg:px-10 h-full flex max-w-[2000px] justify-between items-start top-0 left-0 z-20 gap-[40px] lg:gap-[80px] gradient  flex-col lg:flex-row  pt-16 lg:pt-24 "
-      >
-        <div className=' w-full lg:w-auto flex items-start flex-col lg:sticky top-20 pb-4'>
-            <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2'>Testimonials</p>
-        <h2 className='text-2xl leading-[90%] font-extrabold lg:max-w-[400px] lg:min-w-[400px]' >What they say 
-         <span className='text-[#41a3ff] '> about us</span></h2>
+        <div className=" relative gradient h-full w-2/3 lg:w-auto flex items-start flex-col pb-4 px-10 lg:px-20 pt-16 lg:pt-24">
+          <p className="h-sub uppercase leading-tight tracking-[3.6px] pb-2">
+            Testimonials
+          </p>
+          <h2 className="text-2xl leading-[100%] font-extrabold lg:max-w-[400px] lg:min-w-[400px]">
+            What they say
+            <span className="text-[#41a3ff] "> about us</span>
+          </h2>
         </div>
-        <div className='w-full lg:w-3/4 flex flex-col '>
-      
+
         </div>
+        <div className='  h-full w-7 2xl:w-[60%]'></div>
       </div>
 
-    <motion.section className='w-full left-0  py-20 z-10 flex gap-3' ref={ref}  style={{ x: xTranslation}} >
-      
-      {[...carouselData,...carouselData, ...carouselData].map((card) => (
+      <motion.section
+        className="w-full left-0  py-20 z-10 flex gap-3"
+        ref={ref}
+        style={{ x: xTranslation }}
+      >
+        {[...carouselData, ...carouselData, ...carouselData].map((card) => (
           <TestimonialsCard key={card.id} card={card} />
         ))}
-    </motion.section>
+      </motion.section>
     </div>
-  )
+  );
 }
 
 export default Testimonials
