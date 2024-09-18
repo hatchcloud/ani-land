@@ -6,14 +6,12 @@ import Header from "@/app/components/marine/Header";
 
 import { useEffect } from "react";
 import Lenis from 'lenis'
-
-
-import { useState } from "react";
+import WhyUsTitle from "../components/marine/WhyUsTitle";
 
 
 export default function Home() {
 
-  const [cursor, setCursor] = useState({active: false, part: 'default' })
+  
 
   useEffect( () => {
     const lenis = new Lenis()
@@ -30,6 +28,7 @@ export default function Home() {
         <Header />
         <HeroTitle />
         <HeroCarrusel />
+        <WhyUsTitle />
       <section className="  bg-red-700 w-full h-svh z-10"></section>
       <section className="  bg-black w-full h-svh z-10"></section>
     </main>
