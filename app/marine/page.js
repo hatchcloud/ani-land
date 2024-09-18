@@ -7,6 +7,7 @@ import Header from "@/app/components/marine/Header";
 import { useEffect } from "react";
 import Lenis from 'lenis'
 import WhyUsTitle from "../components/marine/WhyUsTitle";
+import WhyUsSection from "../components/marine/WhyUsSection";
 
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <HeroTitle />
         <HeroCarrusel />
         <WhyUsTitle />
+        <WhyUsSection />
       <section className="  bg-red-700 w-full h-svh z-10"></section>
       <section className="  bg-black w-full h-svh z-10"></section>
     </main>

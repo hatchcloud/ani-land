@@ -12,7 +12,7 @@ const WhyUsTitle = () => {
         whileInView={{ opacity: 1 }} 
         transition={{ duration: 0.8, ease: "easeIn" }} 
         viewport={{ once: true, amount: 0.3 }}
-        className=" w-full px-5 lg:px-10 h-full flex justify-between items-start relative gap-[40px] lg:gap-[80px]  flex-col lg:flex-row  py-16 lg:py-24 "
+        className=" w-full px-5 lg:px-10 h-full flex justify-between items-start relative gap-[40px] lg:gap-[80px]  flex-col lg:flex-row  pt-16 lg:py-24 "
       >
         <div className=' w-full lg:w-auto flex items-start flex-col top-20'>
             <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2'>Services</p>
