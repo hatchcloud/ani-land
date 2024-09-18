@@ -14,7 +14,7 @@
   font-size: clamp(4.5rem, 10vw, 10rem);
 }
 .hero-main{
-  font-size: clamp(4.5rem, 10vw, 11rem);
+  font-size: clamp(3.5rem, 10vw, 11rem);
 }
 .hero-sub{
   font-size: clamp(3rem, 7.5vw, 8rem);

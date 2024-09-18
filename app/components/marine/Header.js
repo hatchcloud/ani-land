@@ -16,7 +16,8 @@ function Header() {
                 src="/logo.svg" 
                 alt="Totem Logo"
                 width={150} 
-                height={36} 
+                height={36}
+                className="h-6 w-24 md:h-9 md:w-[150px] "
             />
         </div>
         <nav className="gap-5 text-base hidden lg:flex text-gray-50 hover:text-gray-200">
@@ -25,7 +26,7 @@ function Header() {
           <a href="#" >Contact Us</a>
         </nav>  
         <div className="w-[150px] flex  justify-end">
-            <div className="border text-md border-gray-600 rounded-full px-4 py-1 text-gray-50 hover:text-gray-200 hover:border-gray-200">
+            <div className="border text-base md:text-md border-gray-600 rounded-full px-4 py-1 text-gray-50 hover:text-gray-200 hover:border-gray-200">
             EN
             </div>
         </div>    
