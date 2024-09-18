@@ -13,6 +13,12 @@
 .heading-hero{
   font-size: clamp(4.5rem, 10vw, 10rem);
 }
+.hero-main{
+  font-size: clamp(4.5rem, 10vw, 11rem);
+}
+.hero-sub{
+  font-size: clamp(3rem, 7.5vw, 8rem);
+}
 
 .heading-sub {
   font-size: clamp(14px, 2vw, 30px);
