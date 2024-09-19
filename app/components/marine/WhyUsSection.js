@@ -6,14 +6,19 @@ const WhyUsItem = ({ id, title, description, bgColor, topPosition }) => {
  
     return (
       <div style={{ top:topPosition}} className='px-5  md:px-10 w-full max-w-[2000px] sticky'>
-      <div style={{ backgroundColor: bgColor}} className=" flex  gap-4 md:gap-6 pt-8 pb-16 border-x-[1.5px] border-[#334577]  max-w-[2000px] w-full h-auto z-10  px-5  md:px-10 ">
-        <div className='w-20 lg:w-1/3' >
+      <div style={{ backgroundColor: bgColor}} className=" flex  gap-2 md:gap-6 pt-8 pb-16 border-x-[1.5px] border-[#334577]  max-w-[2000px] w-full h-auto z-10  px-5  md:px-10 ">
+        <div className='w-14 lg:w-1/3' >
         <p className='text-base md:text-md tracking-[3.6px] '>{id}</p>
         </div>
-        <div className='flex flex-col w-2/3  gap-2'>
+        <motion.div
+          initial={{ opacity: 0 }} 
+          whileInView={{ opacity: 1 }} 
+          transition={{ duration: 0.8, ease: "easeIn" }} 
+          viewport={{ once: true, amount: 0.3 }} 
+          className='flex flex-col w-full lg:w-2/3  gap-2'>
             <h2 className="text-lg md:text-2xl font-bold mb-2 leading-[110%] "> {title}</h2>
-            <p className='text-pretty pt-8 mb:pt-0 text-base md:text-md text-white/80'>{description}</p>
-        </div>
+            <p className='text-pretty pt-6 mb:pt-0 text-base md:text-md text-white/80'>{description}</p>
+        </motion.div>
       </div>
       </div>
     );
