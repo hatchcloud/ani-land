@@ -18,7 +18,7 @@ const CardServices = () => {
            alt="Laptop boat marketplace" 
           />
         </div>
-        <div className="w-full lg:w-1/2 px-5 md:px-10 ">
+        <div className="w-full lg:w-1/2 px-5 md:px-10 py-10 ">
             <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2 text-white/70'>Services</p>
             <h2 className='text-pretty text-lg md:text-2xl leading-[105%] pb-2 font-extrabold  max-w-[600px] ' > Creation and Redesign of  <span className="text-blue-500">Boat Marketplaces</span>
             </h2>
@@ -27,9 +27,9 @@ const CardServices = () => {
       </div>
 
       {/* Second row */}
-      <div className="flex flex-col lg:flex-row justify-between items-center ">
+      <div className="flex  justify-between items-stretch flex-col-reverse lg:flex-row">
 
-      <div className="w-full lg:w-1/2 px-5 md:px-10 flex flex-col gap-10">
+      <div className="w-full lg:w-1/2 px-5 md:px-10 flex flex-col gap-10 py-10 justify-center ">
             <div className='flex flex-col '>
             <h2 className='text-pretty text-lg md:text-2xl leading-[105%] pb-2 font-extrabold  max-w-[600px] ' > <span className="text-blue-500">Search Engine Optimized</span> Website Development
             </h2>

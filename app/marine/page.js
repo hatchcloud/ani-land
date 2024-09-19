@@ -24,6 +24,10 @@ export default function Home() {
     requestAnimationFrame(raf)
   }, []) */
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className=" bg-marine-dark min-h-screen flex flex-col items-center text-white">
         <Header />
