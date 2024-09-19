@@ -1,5 +1,5 @@
 'use client'
-import { motion, useMotionValue } from 'framer-motion';
+import { motion } from 'framer-motion';
 import CardServices from './CardServices';
 
 const WhyUsItem = ({ id, title, description, bgColor, topPosition }) => {

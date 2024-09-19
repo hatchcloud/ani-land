@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import laptopImage from '@/public/TotemMarine02.png';
 import phoneImage from '@/public/TotemMarine03.png'; 
 
@@ -9,7 +10,14 @@ const CardServices = () => {
 
     
       <div className="flex flex-col lg:flex-row justify-between items-center w-full ">
-        <div className="w-full lg:w-1/2 min-h-[400px] md:min-h-[600px] relative ">
+        <div className="w-full lg:w-1/2 min-h-[400px] md:min-h-[600px] relative overflow-hidden ">
+        <motion.div
+            initial={{ scaleX: 1 }} 
+            whileInView={{ scaleX: 0 }}
+            transition={{ duration: 0.8, ease: "easeIn" }} 
+            style={{ transformOrigin: "left" }} 
+            viewport={{ once: true, amount: 0.3 }}  
+            className=' z-30 h-full min-h-[400px] md:min-h-[600px] w-full bg-marine-gray relative'></motion.div>
           <Image 
             src={laptopImage}
             layout="fill"
@@ -43,6 +51,13 @@ const CardServices = () => {
         </div>
 
         <div className="w-full lg:w-1/2 min-h-[400px] md:min-h-[600px] relative">
+        <motion.div
+            initial={{ scaleX: 1 }} 
+            whileInView={{ scaleX: 0 }}
+            transition={{ duration: 0.8, ease: "easeIn" }} 
+            style={{ transformOrigin: "right" }} 
+            viewport={{ once: true, amount: 0.3 }}  
+            className=' z-30 h-full min-h-[400px] md:min-h-[600px] w-full bg-marine-gray relative'></motion.div>
           <Image src={phoneImage}
           layout="fill"
           objectFit="cover"
