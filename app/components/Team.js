@@ -14,7 +14,7 @@ function TeamPhoto() {
           transition={{ duration: 0.8, ease: "easeIn" }} 
           viewport={{ once: true, amount: .5 }}
           className='w-full h-full px-10 md:px-16'>
-        <div className=' w-full h-2/4 flex items-center justify-center flex-col pb-10 '>
+        <div className=' w-full h-auto md:h-2/4 flex items-center justify-center flex-col pb-10 '>
             <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2 w-full max-w-[1000px] pt-10 '>Culture</p>
         <h2 className='text-xl md:text-3xl leading-[90%] font-extrabold max-w-[1000px]' >Founded in 2009, our Costa Rica-based team values IT professionals with <span className='text-[#2cee91] '>strong soft skills</span> for seamless integration 
         and success.</h2>
