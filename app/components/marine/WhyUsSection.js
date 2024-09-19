@@ -1,10 +1,12 @@
 'use client'
 import { motion, useMotionValue } from 'framer-motion';
+import CardServices from './CardServices';
 
 const WhyUsItem = ({ id, title, description, bgColor, topPosition }) => {
  
     return (
-      <motion.div style={{ backgroundColor: bgColor, top:topPosition}} className=" flex  px-5  md:px-10 gap-4 md:gap-6 py-14 border-x-[1.5px] border-[#334577] sticky">
+      <div style={{ top:topPosition}} className='px-5  md:px-10 w-full max-w-[2000px] sticky'>
+      <div style={{ backgroundColor: bgColor}} className=" flex  gap-4 md:gap-6 py-8 border-x-[1.5px] border-[#334577]  max-w-[2000px] w-full h-auto z-10  px-5  md:px-10 ">
         <div className='w-20 lg:w-1/3' >
         <p className='text-base md:text-md tracking-[3.6px] '>{id}</p>
         </div>
@@ -12,7 +14,8 @@ const WhyUsItem = ({ id, title, description, bgColor, topPosition }) => {
             <h2 className="text-lg md:text-2xl font-bold mb-2 leading-[110%] "> {title}</h2>
             <p className='text-pretty text-base md:text-md text-white/80'>{description}</p>
         </div>
-      </motion.div>
+      </div>
+      </div>
     );
   };
 
@@ -30,44 +33,48 @@ const WhyUsSection = () => {
           title: "Tailored Solutions",
           description: "We design and redesign Marketplaces and websites to maximize your digital presence and boost your sales.",
           bgColor: "#001C66",  
-          topPosition: '120px'
+          topPosition: '100px'
         },
         {
           id: "003",
           title: "SEO Optimization",
           description: "Our websites are SEO-optimized to ensure greater visibility and traffic.",
           bgColor: "#002380",
-          topPosition: '240px', 
+          topPosition: '200px', 
         },
         {
           id: "004",
           title: "Competitive Pricing",
           description: "Get global quality at accessible prices thanks to our strategic location in Costa Rica.",
           bgColor: "#002999",
-          topPosition: '360px',  
+          topPosition: '300px',  
         },
         {
           id: "005",
-          title: "Full Support in Your Digital Transformation",
+          title: "Digital Transformation",
           description: "We guide companies through every stage of their digital transformation process, ensuring success from start to finish.",
           bgColor: "#001755",
-          topPosition: '480px',  
-        }
+          topPosition: '400px',   
+        },
+
       ];
       
   return (
-    
-    <div className='max-w-[2000px] w-full min-h-[600px] z-10  px-5  md:px-10 '>
+    <div className='w-full relative'>
+    <div className=' w-full flex flex-col justify-center items-center'>
       {sections.map((section) => (
         <WhyUsItem
-          key={section.id}
-          id={section.id}
-          title={section.title}
-          description={section.description}
-          bgColor={section.bgColor}
-          topPosition={section.topPosition}
+        key={section.id}
+        id={section.id}
+        title={section.title}
+        description={section.description}
+        bgColor={section.bgColor}
+        topPosition={section.topPosition}
         />
       ))}
+   
+    <CardServices />
+    </div>
     </div>
   )
 }

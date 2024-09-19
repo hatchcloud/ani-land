@@ -11,7 +11,7 @@ const HeroCarrusel = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.7, ease: "easeInOut", delay: 1 }}
-      className="max-w-[2000px] w-full min-h-[600px] lg:aspect-[1/0.6] sticky top-0"
+      className="max-w-[2000px] w-full min-h-[600px] lg:aspect-[1/0.6] sticky top-0 "
     >
       <Image
         src={heroImage}

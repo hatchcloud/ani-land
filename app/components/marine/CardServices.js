@@ -4,7 +4,7 @@ import phoneImage from '@/public/TotemMarine03.png';
 
 const CardServices = () => {
   return (
-    <section className=' bg-marine-gray w-full z-10 py-20 flex items-center justify-center'>
+    <section className=' bg-marine-gray w-full z-50 py-20 flex items-center justify-center relative'>
         <div className='max-w-[2000px] px-5  md:px-10 w-full'>
 
     
