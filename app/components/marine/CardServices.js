@@ -9,7 +9,7 @@ const CardServices = () => {
 
     
       <div className="flex flex-col lg:flex-row justify-between items-center w-full ">
-        <div className="w-full lg:w-1/2 min-h-[600px] relative ">
+        <div className="w-full lg:w-1/2 min-h-[400px] md:min-h-[600px] relative ">
           <Image 
             src={laptopImage}
             layout="fill"
@@ -42,7 +42,7 @@ const CardServices = () => {
             </div>
         </div>
 
-        <div className="w-full lg:w-1/2 min-h-[600px] relative">
+        <div className="w-full lg:w-1/2 min-h-[400px] md:min-h-[600px] relative">
           <Image src={phoneImage}
           layout="fill"
           objectFit="cover"
