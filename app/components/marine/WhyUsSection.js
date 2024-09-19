@@ -56,6 +56,7 @@ const WhyUsSection = () => {
       ];
       
   return (
+    
     <div className='max-w-[2000px] w-full min-h-[600px] z-10  px-5  md:px-10 '>
       {sections.map((section) => (
         <WhyUsItem
