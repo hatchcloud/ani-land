@@ -15,7 +15,7 @@ const WhyUsTitle = () => {
         className=" w-full px-5 lg:px-10 h-full flex justify-between items-start relative gap-[40px] lg:gap-[80px]  flex-col lg:flex-row  pt-16 lg:py-24 "
       >
         <div className=' w-full lg:w-auto flex items-start flex-col top-20'>
-            <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2'>Services</p>
+        <p className='h-sub uppercase leading-tight tracking-[3.6px] pb-2 text-white/70'>Our Value</p>
         <h2 className='text-xl md:text-2xl lg:text-3xl leading-[90%] font-extrabold lg:min-w-[500px]' > Why Choose Us?
         </h2>
         </div>

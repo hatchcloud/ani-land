@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         marine: {
           dark: '#001755',
-          accent: '#41A3FF'
+          accent: '#41A3FF',
+          gray: '#161616', 
         },
         cream: {
           50: '#F7F7F5',
