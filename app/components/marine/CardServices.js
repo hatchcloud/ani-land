@@ -33,7 +33,7 @@ const CardServices = () => {
             <div className='flex flex-col '>
             <h2 className='text-pretty text-lg md:text-2xl leading-[105%] pb-2 font-extrabold  max-w-[600px] ' > <span className="text-blue-500">Search Engine Optimized</span> Website Development
             </h2>
-            <p className=' text-pretty text-md text-white/80 max-w-[600px] '>We know the marine industry. We've worked with leaders like Boattrader, Yachtworld, and Boats.com.</p>
+            <p className=' text-pretty text-md text-white/80 max-w-[600px] '>We know the marine industry. We have worked with leaders like Boattrader, Yachtworld, and Boats.com.</p>
             </div>
             <div className='flex flex-col '>
             <h2 className='text-pretty text-lg md:text-2xl leading-[105%] pb-2 font-extrabold  max-w-[500px] ' > Digital Marketing for <span className="text-blue-500">Marine Businesses</span>
