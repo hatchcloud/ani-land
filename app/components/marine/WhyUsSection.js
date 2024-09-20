@@ -29,7 +29,7 @@ const WhyUsSection = () => {
         {
           id: "001",
           title: "Specialized Expertise",
-          description: "We know the marine industry. We've worked with leaders like Boattrader, Yachtworld, and Boats.com",
+          description: "We know the marine industry. We've worked with industry leaders",
           bgColor: "#001755",
           topPosition: '0px'
         },
